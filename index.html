@@ -11,38 +11,43 @@
    <div class="cal">
 
      <div class="result">
-       
+       <input type="text" class="input-box" id="screen" placeholder="0">
       </div> 
+
      <div class="section__one">
-        <button class="button one">c</button>
-        <button class="button">()</button>
-        <button class="button">%</button>
-        <button class="button">/</button>
+        <button class="button one" onclick="wipe('')">C</button>
+        <button class="button" onclick="show('(')">(</button>
+        <button class="button" onclick="show(')')">)</button>
+        <button class="button" onclick="show('%')">%</button>
+        <button class="button" onclick="show('/')">/</button>
      </div>
      <div class="section__two">
-        <button class="button one">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">x</button>
+        <button class="button one" onclick="show('7')">7</button>
+        <button class="button" onclick="show('8')">8</button>
+        <button class="button" onclick="show('9')">9</button>
+        <button class="button" onclick="show('*')">*</button>
      </div>
      <div class="section__three">
-        <button class="button one">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">-</button>
+        <button class="button one" onclick="show('4')">4</button>
+        <button class="button" onclick="show('5')">5</button>
+        <button class="button" onclick="show('6')">6</button>
+        <button class="button" onclick="show('-')">-</button>
      </div>
      <div class="section__four">
-        <button class="button one">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">+</button>
+        <button class="button one" onclick="show('1')">1</button>
+        <button class="button" onclick="show('2')">2</button>
+        <button class="button" onclick="show('3')">3</button>
+        <button class="button" onclick="show('+')">+</button>
      </div>
      <div class="section__five">
-        <button class="button one">+/-</button>
-        <button class="button">0</button>
-        <button class="button">.</button>
-        <button class="button">=</button>
+        <button class="button one" onclick="show('+/-')">+/-</button>
+        <button class="button" onclick="show('0')">0</button>
+        <button class="button" onclick="show('.')">.</button>
+        <button class="button" onclick="calc('=')">=</button>
      </div>
+
+    
    </div> 
+   <script src="main.js"></script>
 </body>
 </html>
